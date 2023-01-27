@@ -1,0 +1,26 @@
+{
+  "name": "book-record-management-8412",
+  "version": "1.0.0",
+  "description": "Book record management server build with node.js and express",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "dev":"index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rohit8412/Book-Record-Management-8412.git"
+  },
+  "author": "Rohit Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rohit8412/Book-Record-Management-8412/issues"
+  },
+  "homepage": "https://github.com/Rohit8412/Book-Record-Management-8412#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemo": "^1.0.0"
+  }
+}
