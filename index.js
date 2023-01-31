@@ -1,16 +1,20 @@
 const {res} = require("express");
 const express = require("express");
-const {users} = require("./data/users.json");  // JSON data import
+const dotenv = require('dotenv');  
+//database connection
+const DbConnection = require("./databaseConnection");
 //importing routes
 
 const usersRouter = require("./routes/users"); // not necessary to write .js
 const booksRouter = require("./routes/books");
 
+dotenv.config();  //for mongoDB
 
 const app = express();
 
-const PORT = 8081;
+DbConnection();
 
+const PORT = 8081;
 app.use(express.json());
 
 app.get("/", (req, res) => {
